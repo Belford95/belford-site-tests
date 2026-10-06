@@ -20,9 +20,7 @@ test('SPEC.md:5 - no horizontal scroll at a viewport width of 375px', async ({ p
   expect(scrollWidth).toBeLessThanOrEqual(clientWidth);
 });
 
-// SPEC.md:6 does not define what a "card" is, what the "plain message" says, or
-// which fetch can fail, so this cannot be checked without guessing at the site's markup.
-test.fixme('SPEC.md:6 - #repos lists public GitHub repos as cards, or shows a plain message', async () => {});
+// SPEC.md:6 (#repos) is tested in repos.spec.ts.
 
 // "Links to email, GitHub and LinkedIn" is read as: an <a> with a mailto: href,
 // an <a> whose href is on github.com, and an <a> whose href is on linkedin.com.
